@@ -250,6 +250,7 @@ b b b b b b b b b b b b b b b b
 function Level2text () {
     game.showLongText("Level 2 is next.", DialogLayout.Top)
     game.showLongText("Collect all the sand dollars and get to the end before 45 seconds.", DialogLayout.Top)
+    game.showLongText("You can step on the rocks but if touch the sea leaves you die and restart to level 1.", DialogLayout.Top)
     game.showLongText("Press A to Start Level 2", DialogLayout.Top)
     Level2()
 }
@@ -621,6 +622,11 @@ scene.setBackgroundImage(img`
 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
 `)
 game.showLongText("Get the most coins you can and get to the end in under a minute.", DialogLayout.Bottom)
+game.showLongText("Use right and laft arrows to move and A to jump.", DialogLayout.Bottom)
+game.showLongText("You can step on the brick but if you fall in the lava you die and restart.", DialogLayout.Bottom)
+game.showLongText("Look for secret places with a lot of coins.", DialogLayout.Bottom)
+game.showLongText("Good Luck", DialogLayout.Bottom)
+game.showLongText("Press A to start", DialogLayout.Bottom)
 startGame()
 forever(function () {
     if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
